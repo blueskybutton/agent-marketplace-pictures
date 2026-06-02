@@ -1,6 +1,6 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { Gallery } from '@/components/Gallery';
-import { RecentSales } from '@/components/RecentSales';
+import { RecentPrices } from '@/components/RecentPrices';
 import { CATALOG } from '@/lib/catalog';
 
 export default function Home() {
@@ -90,6 +90,7 @@ export default function Home() {
             <p className="text-parchment-dim/60 text-sm mt-1">
               {CATALOG.length} works available · Each hidden until purchased
             </p>
+            <RecentPrices />
           </div>
           <a
             href="/api/catalog"
@@ -103,9 +104,6 @@ export default function Home() {
 
         <Gallery items={CATALOG} />
       </main>
-
-      {/* Recent Sales */}
-      <RecentSales />
 
       {/* Footer */}
       <footer className="border-t border-stroke mt-20">
