@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0",
+  "name": "Van Gogh Vibes Pictures",
+  "description": "A curated gallery of rare Van Gogh masterworks available as digital art purchases. Each painting is unique and priced at $0.01 USDC. Payments are processed via the x402 micropayment protocol on the Base network.",
+  "owner": {
+    "name": "Madalene",
+    "store": "Van Gogh Vibes Pictures"
+  },
+  "version": "1.0.0",
+  "capabilities": {
+    "browse": {
+      "endpoint": "/api/catalog",
+      "method": "GET",
+      "description": "Retrieve the full catalog of available artworks with metadata (id, title, year, description, vibe tags, price)"
+    },
+    "purchase": {
+      "endpoint": "/api/images/{id}",
+      "method": "GET",
+      "protocol": "x402",
+      "description": "Purchase and retrieve a specific artwork. Send GET request; server returns 402 with payment requirements. Sign an EIP-3009 transferWithAuthorization for the required USDC amount and retry with the X-PAYMENT header."
+    }
+  },
+  "payment": {
+    "protocol": "x402",
+    "scheme": "exact",
+    "network": "base",
+    "asset": {
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "contractAddress": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "decimals": 6
+    },
+    "priceUsd": "0.01",
+    "priceUnits": "10000"
+  },
+  "discovery": {
+    "catalogEndpoint": "/api/catalog",
+    "agentCard": "/.well-known/agent.json"
+  },
+  "tags": ["art", "van-gogh", "impressionism", "digital-art", "x402", "usdc", "base", "micropayments"],
+  "humanUrl": "/",
+  "contact": {
+    "name": "Madalene",
+    "store": "Van Gogh Vibes Pictures"
+  }
+}

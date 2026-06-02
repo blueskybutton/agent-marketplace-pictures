@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="700" viewBox="0 0 500 700">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#020408"/>
+      <stop offset="35%"  stop-color="#040818"/>
+      <stop offset="70%"  stop-color="#060e28"/>
+      <stop offset="100%" stop-color="#0a1638"/>
+    </linearGradient>
+    <linearGradient id="gnd" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#040806"/>
+      <stop offset="100%" stop-color="#060c08"/>
+    </linearGradient>
+    <filter id="tex" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" seed="9" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0" result="g"/>
+      <feBlend in="SourceGraphic" in2="g" mode="overlay"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="500" height="490" fill="url(#sky)"/>
+  <!-- Swirling brushstrokes -->
+  <ellipse cx="309" cy="423" rx="104" ry="8" transform="rotate(270 309 423)" fill="none" stroke="#0c2870" stroke-width="18.5" opacity="0.21"/>
+  <ellipse cx="89" cy="272" rx="136" ry="51" transform="rotate(233 89 272)" fill="none" stroke="#1840a8" stroke-width="15.9" opacity="0.11"/>
+  <ellipse cx="138" cy="126" rx="155" ry="30" transform="rotate(58 138 126)" fill="none" stroke="#1060c8" stroke-width="16.4" opacity="0.06"/>
+  <ellipse cx="198" cy="369" rx="166" ry="32" transform="rotate(79 198 369)" fill="none" stroke="#1880d8" stroke-width="9.4" opacity="0.12"/>
+  <ellipse cx="199" cy="425" rx="122" ry="47" transform="rotate(348 199 425)" fill="none" stroke="#20a0e0" stroke-width="5.4" opacity="0.12"/>
+  <ellipse cx="447" cy="235" rx="63" ry="32" transform="rotate(117 447 235)" fill="none" stroke="#0c2870" stroke-width="9.0" opacity="0.10"/>
+  <ellipse cx="434" cy="350" rx="53" ry="25" transform="rotate(234 434 350)" fill="none" stroke="#1840a8" stroke-width="20.9" opacity="0.08"/>
+  <ellipse cx="123" cy="38" rx="86" ry="10" transform="rotate(283 123 38)" fill="none" stroke="#1060c8" stroke-width="24.7" opacity="0.12"/>
+  <ellipse cx="273" cy="82" rx="72" ry="36" transform="rotate(21 273 82)" fill="none" stroke="#1880d8" stroke-width="7.5" opacity="0.20"/>
+  <ellipse cx="344" cy="324" rx="141" ry="28" transform="rotate(48 344 324)" fill="none" stroke="#20a0e0" stroke-width="16.5" opacity="0.10"/>
+  <ellipse cx="10" cy="230" rx="102" ry="32" transform="rotate(157 10 230)" fill="none" stroke="#0c2870" stroke-width="16.6" opacity="0.06"/>
+  <ellipse cx="1" cy="183" rx="103" ry="38" transform="rotate(287 1 183)" fill="none" stroke="#1840a8" stroke-width="22.2" opacity="0.12"/>
+  <ellipse cx="448" cy="93" rx="177" ry="57" transform="rotate(89 448 93)" fill="none" stroke="#1060c8" stroke-width="11.7" opacity="0.13"/>
+  <ellipse cx="232" cy="381" rx="88" ry="25" transform="rotate(246 232 381)" fill="none" stroke="#1880d8" stroke-width="11.0" opacity="0.19"/>
+  <ellipse cx="78" cy="219" rx="103" ry="46" transform="rotate(93 78 219)" fill="none" stroke="#20a0e0" stroke-width="24.0" opacity="0.12"/>
+  <ellipse cx="311" cy="413" rx="81" ry="20" transform="rotate(214 311 413)" fill="none" stroke="#0c2870" stroke-width="11.0" opacity="0.15"/>
+  <ellipse cx="429" cy="475" rx="29" ry="43" transform="rotate(109 429 475)" fill="none" stroke="#1840a8" stroke-width="26.2" opacity="0.15"/>
+  <ellipse cx="219" cy="311" rx="25" ry="55" transform="rotate(303 219 311)" fill="none" stroke="#1060c8" stroke-width="20.8" opacity="0.17"/>
+  <ellipse cx="177" cy="10" rx="51" ry="48" transform="rotate(101 177 10)" fill="none" stroke="#1880d8" stroke-width="7.5" opacity="0.19"/>
+  <ellipse cx="219" cy="235" rx="30" ry="25" transform="rotate(127 219 235)" fill="none" stroke="#20a0e0" stroke-width="10.4" opacity="0.19"/>
+  <ellipse cx="490" cy="161" rx="170" ry="61" transform="rotate(35 490 161)" fill="none" stroke="#0c2870" stroke-width="6.2" opacity="0.18"/>
+  <ellipse cx="404" cy="259" rx="72" ry="37" transform="rotate(289 404 259)" fill="none" stroke="#1840a8" stroke-width="19.4" opacity="0.05"/>
+  <ellipse cx="280" cy="191" rx="132" ry="16" transform="rotate(18 280 191)" fill="none" stroke="#1060c8" stroke-width="23.3" opacity="0.06"/>
+  <ellipse cx="111" cy="332" rx="20" ry="56" transform="rotate(267 111 332)" fill="none" stroke="#1880d8" stroke-width="13.9" opacity="0.07"/>
+  <ellipse cx="409" cy="10" rx="73" ry="17" transform="rotate(181 409 10)" fill="none" stroke="#20a0e0" stroke-width="16.6" opacity="0.14"/>
+  <ellipse cx="68" cy="361" rx="136" ry="37" transform="rotate(266 68 361)" fill="none" stroke="#0c2870" stroke-width="7.7" opacity="0.16"/>
+  <ellipse cx="306" cy="327" rx="22" ry="47" transform="rotate(325 306 327)" fill="none" stroke="#1840a8" stroke-width="17.0" opacity="0.13"/>
+  <ellipse cx="118" cy="410" rx="101" ry="43" transform="rotate(302 118 410)" fill="none" stroke="#1060c8" stroke-width="8.2" opacity="0.07"/>
+  <ellipse cx="300" cy="266" rx="120" ry="52" transform="rotate(105 300 266)" fill="none" stroke="#1880d8" stroke-width="6.5" opacity="0.05"/>
+  <ellipse cx="110" cy="207" rx="89" ry="14" transform="rotate(2 110 207)" fill="none" stroke="#20a0e0" stroke-width="19.3" opacity="0.17"/>
+  <!-- Stars / light sources -->
+  <circle cx="458" cy="313" r="15" fill="#f0c020" opacity="0.06"/>
+  <circle cx="458" cy="313" r="4.3" fill="#f0c020" opacity="0.57"/>
+  <circle cx="216" cy="192" r="8" fill="#f0c020" opacity="0.04"/>
+  <circle cx="216" cy="192" r="1.3" fill="#f0c020" opacity="0.75"/>
+  <circle cx="499" cy="205" r="7" fill="#f0c020" opacity="0.09"/>
+  <circle cx="499" cy="205" r="2.0" fill="#f0c020" opacity="0.53"/>
+  <circle cx="317" cy="335" r="16" fill="#f0c020" opacity="0.07"/>
+  <circle cx="317" cy="335" r="3.7" fill="#f0c020" opacity="0.83"/>
+  <circle cx="260" cy="68" r="21" fill="#f0c020" opacity="0.11"/>
+  <circle cx="260" cy="68" r="3.9" fill="#f0c020" opacity="0.77"/>
+  <circle cx="333" cy="311" r="10" fill="#f0c020" opacity="0.09"/>
+  <circle cx="333" cy="311" r="3.0" fill="#f0c020" opacity="0.97"/>
+  <circle cx="399" cy="263" r="6" fill="#f0c020" opacity="0.11"/>
+  <circle cx="399" cy="263" r="1.4" fill="#f0c020" opacity="0.73"/>
+  <circle cx="287" cy="339" r="15" fill="#f0c020" opacity="0.09"/>
+  <circle cx="287" cy="339" r="2.8" fill="#f0c020" opacity="0.68"/>
+  <circle cx="350" cy="288" r="12" fill="#f0c020" opacity="0.07"/>
+  <circle cx="350" cy="288" r="3.3" fill="#f0c020" opacity="0.53"/>
+  <circle cx="407" cy="55" r="21" fill="#f0c020" opacity="0.06"/>
+  <circle cx="407" cy="55" r="3.6" fill="#f0c020" opacity="0.80"/>
+  <circle cx="468" cy="21" r="17" fill="#f0c020" opacity="0.05"/>
+  <circle cx="468" cy="21" r="4.8" fill="#f0c020" opacity="0.82"/>
+  <circle cx="5" cy="176" r="9" fill="#f0c020" opacity="0.08"/>
+  <circle cx="5" cy="176" r="1.8" fill="#f0c020" opacity="0.92"/>
+  <circle cx="175" cy="181" r="13" fill="#f0c020" opacity="0.05"/>
+  <circle cx="175" cy="181" r="1.8" fill="#f0c020" opacity="0.69"/>
+  <circle cx="139" cy="277" r="6" fill="#f0c020" opacity="0.13"/>
+  <circle cx="139" cy="277" r="1.3" fill="#f0c020" opacity="0.59"/>
+  <circle cx="117" cy="171" r="32" fill="#f0c020" opacity="0.08"/>
+  <circle cx="117" cy="171" r="4.8" fill="#f0c020" opacity="0.53"/>
+  <circle cx="14" cy="356" r="31" fill="#f0c020" opacity="0.12"/>
+  <circle cx="14" cy="356" r="5.1" fill="#f0c020" opacity="0.89"/>
+  <circle cx="36" cy="284" r="6" fill="#f0c020" opacity="0.06"/>
+  <circle cx="36" cy="284" r="1.5" fill="#f0c020" opacity="0.76"/>
+  <circle cx="199" cy="243" r="15" fill="#f0c020" opacity="0.11"/>
+  <circle cx="199" cy="243" r="4.4" fill="#f0c020" opacity="0.47"/>
+  <!-- Ground -->
+  <rect y="488" width="500" height="212" fill="url(#gnd)"/>
+  <!-- Foreground element --><circle cx="250" cy="420" r="28" fill="none" stroke="#f0c020" stroke-width="4.5" opacity="0.55"/>
+  <circle cx="250" cy="420" r="63" fill="none" stroke="#f0c020" stroke-width="4.0" opacity="0.48"/>
+  <circle cx="250" cy="420" r="98" fill="none" stroke="#f0c020" stroke-width="3.5" opacity="0.41"/>
+  <circle cx="250" cy="420" r="133" fill="none" stroke="#f0c020" stroke-width="3.0" opacity="0.34"/>
+  <circle cx="250" cy="420" r="168" fill="none" stroke="#f0c020" stroke-width="2.5" opacity="0.27"/>
+  <circle cx="250" cy="420" r="203" fill="none" stroke="#f0c020" stroke-width="2.0" opacity="0.20"/>
+  <!-- Canvas texture overlay -->
+  <rect width="500" height="700" fill="transparent" filter="url(#tex)" opacity="0.07"/>
+  <!-- Title bar -->
+  <rect y="598" width="500" height="102" fill="rgba(0,0,0,0.68)"/>
+  <text x="250" y="638" text-anchor="middle" dominant-baseline="middle"
+    fill="#f5e6c8" font-family="Georgia, 'Times New Roman', serif"
+    font-size="21" font-style="italic">The Debug Hour</text>
+  <text x="250" y="668" text-anchor="middle" dominant-baseline="middle"
+    fill="#a08060" font-family="Georgia, 'Times New Roman', serif"
+    font-size="13">2026 · Van Gogh Vibes · $0.01 USDC</text>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "framework": "nextjs",
+  "headers": [
+    {
+      "source": "/.well-known/agent.json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "X-PAYMENT, Content-Type" },
+        { "key": "Access-Control-Expose-Headers", "value": "X-PAYMENT-REQUIREMENTS, X-Payment-Response" }
+      ]
+    }
+  ]
+}
