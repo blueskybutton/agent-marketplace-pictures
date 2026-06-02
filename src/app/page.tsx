@@ -51,7 +51,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
           <div className="inline-flex items-center gap-2 bg-gold/10 border border-gold/20 text-gold text-xs font-medium px-3 py-1.5 rounded-full mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
-            x402 Micropayments · $0.01 USDC per image
+            x402 Micropayments · $0.01–$0.08 USDC per image
           </div>
           <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-parchment leading-tight mb-4">
             Rare &amp; Unique<br />
@@ -59,7 +59,7 @@ export default function Home() {
           </h2>
           <p className="text-parchment/50 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
             Each painting is a portal — a window into Van Gogh&apos;s singular vision.
-            Connect your wallet and own a piece of art history for just one cent.
+            Connect your wallet and own a piece of art history for just a few cents.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-parchment-dim/60">
             <span className="flex items-center gap-1.5">

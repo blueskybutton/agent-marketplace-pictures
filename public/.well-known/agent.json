@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "name": "Van Gogh Vibes Pictures",
-  "description": "A curated gallery of rare Van Gogh masterworks available as digital art purchases. Each painting is unique and priced at $0.01 USDC. Payments are processed via the x402 micropayment protocol on the Base network.",
+  "description": "A curated gallery of rare Van Gogh masterworks available as digital art purchases. Each painting is unique and individually priced from $0.01 to $0.08 USDC. Payments are processed via the x402 micropayment protocol on the Base network.",
   "owner": {
     "name": "Madalene",
     "store": "Van Gogh Vibes Pictures"
@@ -30,8 +30,9 @@
       "contractAddress": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
       "decimals": 6
     },
-    "priceUsd": "0.01",
-    "priceUnits": "10000"
+    "pricing": "per-item",
+    "priceRangeUsd": { "min": "0.01", "max": "0.08" },
+    "note": "Each artwork is priced individually; query /api/catalog for exact per-item prices."
   },
   "discovery": {
     "catalogEndpoint": "/api/catalog",

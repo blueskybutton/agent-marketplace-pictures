@@ -42,7 +42,7 @@ export const CATALOG: CatalogItem[] = [
     year: 2026,
     description: 'Against a swirling Starry Night sky, a writer commits the eternal truth to paper: one file, any platform, every time. Van Gogh\'s cosmos as a testament to universal creation.',
     vibe: ['cosmic', 'creative', 'universal'],
-    price: 0.01,
+    price: 0.07,
     mimeType: 'image/png',
   },
   {
@@ -51,7 +51,7 @@ export const CATALOG: CatalogItem[] = [
     year: 2026,
     description: 'A lone shepherd tends to data clouds drifting through a midnight blue sky — every cloud a floating archive of the infinite.',
     vibe: ['pastoral', 'boundless', 'serene'],
-    price: 0.01,
+    price: 0.04,
     mimeType: 'image/svg+xml',
   },
   {
@@ -60,7 +60,7 @@ export const CATALOG: CatalogItem[] = [
     year: 2026,
     description: 'Golden data ripens under an emerald sky. Van Gogh paints the season of abundance — the harvest of ten thousand datasets.',
     vibe: ['golden', 'abundant', 'warm'],
-    price: 0.01,
+    price: 0.05,
     mimeType: 'image/svg+xml',
   },
   {
@@ -69,7 +69,7 @@ export const CATALOG: CatalogItem[] = [
     year: 2026,
     description: 'At 3am, a solitary figure bathed in the cold blue glow of a monitor. Van Gogh captures the sacred loneliness of creation — the most exclusive piece in the collection.',
     vibe: ['intense', 'solitary', 'electric'],
-    price: 0.02,
+    price: 0.08,
     mimeType: 'image/svg+xml',
   },
   {
@@ -87,7 +87,7 @@ export const CATALOG: CatalogItem[] = [
     year: 2026,
     description: 'Packets of meaning surge through fiber and air — Van Gogh\'s swirling hand traces the invisible rivers of data that bind the world.',
     vibe: ['flowing', 'electric', 'mysterious'],
-    price: 0.01,
+    price: 0.03,
     mimeType: 'image/svg+xml',
   },
   {
@@ -105,7 +105,7 @@ export const CATALOG: CatalogItem[] = [
     year: 2026,
     description: 'An amber library of every commit ever made — Van Gogh illuminates the cathedral of version history, ancient scrolls of code preserved in amber.',
     vibe: ['ancient', 'warm', 'archival'],
-    price: 0.01,
+    price: 0.06,
     mimeType: 'image/svg+xml',
   },
   {
@@ -123,7 +123,7 @@ export const CATALOG: CatalogItem[] = [
     year: 2026,
     description: 'The golden moment of clarity — a magnifying glass reveals the hidden flaw in a vast night of logic. Van Gogh captures the triumph of the found bug.',
     vibe: ['focused', 'triumphant', 'nocturnal'],
-    price: 0.01,
+    price: 0.05,
     mimeType: 'image/svg+xml',
   },
   {
@@ -168,7 +168,7 @@ export const CATALOG: CatalogItem[] = [
     year: 2026,
     description: 'The rarest find — a vulnerability at first light, before anyone else knows. A crimson dawn breaks over the unknowing world.',
     vibe: ['rare', 'dawn', 'dangerous'],
-    price: 0.01,
+    price: 0.08,
     mimeType: 'image/svg+xml',
   },
   {
@@ -177,7 +177,7 @@ export const CATALOG: CatalogItem[] = [
     year: 2026,
     description: 'Layer upon layer: OS, runtime, framework, application — Van Gogh paints the modern city of software rising against a slate sky.',
     vibe: ['architectural', 'layered', 'urban'],
-    price: 0.01,
+    price: 0.04,
     mimeType: 'image/svg+xml',
   },
   {
@@ -204,7 +204,7 @@ export const CATALOG: CatalogItem[] = [
     year: 2026,
     description: 'The moment the process starts — electric light floods outward as computation begins, Van Gogh\'s sun born again in silicon.',
     vibe: ['electric', 'energetic', 'born'],
-    price: 0.01,
+    price: 0.06,
     mimeType: 'image/svg+xml',
   },
   {
@@ -222,7 +222,7 @@ export const CATALOG: CatalogItem[] = [
     year: 2026,
     description: 'Ancient incantations written before memory — the amber light of old code still runs, still matters. Van Gogh honors what should not be touched.',
     vibe: ['ancient', 'amber', 'enduring'],
-    price: 0.01,
+    price: 0.07,
     mimeType: 'image/svg+xml',
   },
 ];
