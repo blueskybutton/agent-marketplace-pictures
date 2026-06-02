@@ -3,6 +3,7 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 import { CATALOG, LOCAL_IMAGES } from '@/lib/catalog';
 import { createPaymentRequirements, parsePayment, verifyAndSettle } from '@/lib/x402';
+import { recordPurchase } from '@/lib/purchases';
 
 export async function GET(
   request: NextRequest,
@@ -44,6 +45,21 @@ export async function GET(
       { x402Version: 1, error: result.error ?? 'payment_failed' },
       { status: 402 },
     );
+  }
+
+  // Payment succeeded — log the sale (never let logging block delivery).
+  try {
+    await recordPurchase({
+      id: item.id,
+      title: item.title,
+      priceUsd: item.price,
+      buyer: payment?.payload?.authorization?.from ?? null,
+      txHash: result.txHash ?? null,
+      network: requirements.network,
+      at: new Date().toISOString(),
+    });
+  } catch (err) {
+    console.error('[purchases] failed to record sale:', err);
   }
 
   const filename = LOCAL_IMAGES[params.id];

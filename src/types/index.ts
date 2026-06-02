@@ -46,3 +46,14 @@ export interface Payment {
 }
 
 export type PurchaseState = 'idle' | 'connecting' | 'signing' | 'verifying' | 'success' | 'error';
+
+// A recorded sale, surfaced in the "Recent Sales" section.
+export interface Purchase {
+  id: string;            // catalog item id
+  title: string;
+  priceUsd: number;
+  buyer: string | null;  // wallet address; null in demo mode
+  txHash: string | null; // on-chain settlement tx; null in demo mode
+  network: string;
+  at: string;            // ISO 8601 timestamp
+}

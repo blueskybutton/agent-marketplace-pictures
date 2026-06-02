@@ -1,5 +1,6 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { Gallery } from '@/components/Gallery';
+import { RecentSales } from '@/components/RecentSales';
 import { CATALOG } from '@/lib/catalog';
 
 export default function Home() {
@@ -102,6 +103,9 @@ export default function Home() {
 
         <Gallery items={CATALOG} />
       </main>
+
+      {/* Recent Sales */}
+      <RecentSales />
 
       {/* Footer */}
       <footer className="border-t border-stroke mt-20">
